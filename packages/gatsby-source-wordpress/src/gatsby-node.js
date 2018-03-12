@@ -86,6 +86,7 @@ exports.sourceNodes = async (
   entities = normalize.mapEntitiesToMedia(entities)
 
   // Downloads media files and removes "sizes" data as useless in Gatsby context.
+  /*
   entities = await normalize.downloadMediaFiles({
     entities,
     store,
@@ -93,6 +94,7 @@ exports.sourceNodes = async (
     createNode,
     _auth,
   })
+  */
 
   // Search and replace Content Urls
   entities = normalize.searchReplaceContentUrls({
